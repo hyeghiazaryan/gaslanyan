@@ -18,7 +18,7 @@ require_once dirname(__FILE__).'/../app/providers/WorksectionProvider.php';
         <title>Gabby Aslanyan</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="pag fine homes, pagfinehomes.com, modern houses, contemporary houses, homes, luxury homes, high end housing, real estate, contemporary houses for sale wa, contemporary houses for sale eastside, contemporary houses for sale seattle, contemporary houses for sale king county, high end houses for sale, luxury houses for sale, sustainable houses for sale, energy efficient houses for sale, estate size homes in King County">
+        <meta name="keywords" content="UX designer, ux design, ui design, ui designer, web design, web designer, portfolio, ux portfolio, ui portfolio">
 
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -32,16 +32,16 @@ require_once dirname(__FILE__).'/../app/providers/WorksectionProvider.php';
     </head>
     
     <body>
-        <div class="container-fluid">                
+        <div class="container-fluid">  
 
             <!--Main navigation start -->                
-            <nav class="navbar navbar-default">
+            <nav class="navbar">
                 <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a href="/"><img  id="pag-logo" src="/img/content/top-art-name.jpg" alt="Gabby Aslanyan"></a>
-                        <a href="/?page=contact"><img class="media-contact" src="/img/content/media-contact.png" alt="Contact Icon"></a>
+                    <div>
+                        <a href="/"><img  id="ga-logo" src="/img/content/top-art-name.jpg" alt="Gabby Aslanyan"></a>
+                        <hr class="rounded">
                     </div>
-                    <ul class="nav navbar-nav pag-nav-text">
+                    <ul class="nav-text">
                         <li><a href="/">websites</a></li>
                         <li><a href="/?page=logos">logos</a></li>
                         <li><a href="/?page=everything">everything else</a></li>
@@ -89,20 +89,20 @@ require_once dirname(__FILE__).'/../app/providers/WorksectionProvider.php';
             ?>
             
             <!--Footer start-->
-            <div class="pag-footer container-fluid">
-                <ul class="pag-partners">
-                    <li><img src="/img/content/partners11.png"></li>
-                    <li><img src="/img/content/partners11.png"></li>
-                    <li><img src="/img/content/partners11.png"></li>
-                    <li><img src="/img/content/partners11.png"></li>
-                </ul>
+            <div id="ga-footer">
+        
+                    <div class="social-icons"><a href="email"><img src="/img/content/icons-email-60x60.png" alt="Email icon"></a></div>
+                    <div class="social-icons"><a href="http://www.facebook.com"><img src="/img/content/icons-facebook-60x60.png" alt="Email icon"></a></div>
+                    <div class="social-icons"><a href="http://www.linkedin.com"><img src="/img/content/icons-linkedin-60x60.png" alt="Email icon"></a></div>
+             
                 <ul class="footer-nav">
-                    <li><a href="/?page=home">Home</a></li>
-                    <li><a href="/?page=works">Our Work</a></li>
-                    <li><a href="/?page=about">About Us</a></li>
-                    <li><a href="/?page=contact">Contact Us</a></li>        
+                    <li><a href="/?page=home">websites</a></li>
+                    <li><a href="/?page=works">logos</a></li>
+                    <li><a href="/?page=works">everything else</a></li>
+                    <li><a href="/?page=about">about</a></li>
+                    <li><a href="/?page=contact">contact</a></li>        
                 </ul>
-                <span>© 2018 PAG FINE HOMES LLC. ALL RIGHTS RESERVED</span>
+                <span>Gabby Aslanyan © 2022</span>
             </div>
             <!--Footer end-->
         </div>
