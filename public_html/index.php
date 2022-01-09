@@ -1,4 +1,8 @@
 <?php
+header('Cache-Control: no-cache, no-store, must-revalidate');
+header('Pragma: no-cache');
+header('Expires: 0');
+error_reporting(-1);
 require_once dirname(__FILE__).'/../app/pages/Websites.php';
 require_once dirname(__FILE__).'/../app/pages/Logos.php';
 require_once dirname(__FILE__).'/../app/pages/Everything.php';
@@ -10,7 +14,6 @@ require_once dirname(__FILE__).'/../app/pages/Contact.php';
 require_once dirname(__FILE__).'/../app/pages/About_.php';
 require_once dirname(__FILE__).'/../app/pages/Works.php';
 require_once dirname(__FILE__).'/../app/pages/NotFound.php';
-require_once dirname(__FILE__).'/../app/providers/WorksectionProvider.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +22,9 @@ require_once dirname(__FILE__).'/../app/providers/WorksectionProvider.php';
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="UX designer, ux design, ui design, ui designer, web design, web designer, portfolio, ux portfolio, ui portfolio">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
 
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">

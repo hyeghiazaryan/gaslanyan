@@ -1,8 +1,25 @@
 <?php
+require_once dirname(__FILE__).'/../providers/WebsiteProvider.php';
+
 function pageWebsites(){
+    
+    $websiteProvider = new WebsiteProvider();
+    $websites = $websiteProvider->getWebsites();
 ?>
 <div class="row-ga">
-    
+        <?php
+           foreach ($websites as $websiteKey => $website) {
+        ?>
+        <div class="list-view-style">
+            <a href="?page=websites&website=<?php echo $websiteKey?>">
+                    <img src="<?php echo $website->getThumbnail()->getFilePath()?>" alt="<?php echo $website->getName()?>"/>
+                    <div class="list-view-name"><?php echo $website->getName()?></div>
+                    <div class="list-view-undertext"><?php echo $website->getWorksDone()?></div>
+            </a>
+        </div>
+        <?php
+           }
+        ?>
         <div class="list-view-style">
             <a href="http://www.impressionwebstudio.com/" target="_blank">
                     <img src="/img/content/list-view/1-impression-list-view.jpg" alt="Impression Web Studio"/>
