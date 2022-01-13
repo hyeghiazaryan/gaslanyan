@@ -10,6 +10,7 @@ class Website {
     private $link;
     private $thumbnail;
     private $worksDone;
+    private $description;
     
     function __construct($key, $name, $pictureBasePath, $pictureCount) {
         $this->key = $key;
@@ -71,5 +72,13 @@ class Website {
 
     public function getKey() {
         return $this->key;
+    }
+    
+    public function getDescription() {
+        return $this->description;
+    }
+
+    public function setDescription($description): void {
+        $this->description = $description;
     }
 } 
