@@ -12,7 +12,6 @@ require_once dirname(__FILE__).'/../app/pages/Contacts.php';
 require_once dirname(__FILE__).'/../app/pages/Home.php';
 require_once dirname(__FILE__).'/../app/pages/Contact.php';
 require_once dirname(__FILE__).'/../app/pages/About_.php';
-require_once dirname(__FILE__).'/../app/pages/Works.php';
 require_once dirname(__FILE__).'/../app/pages/NotFound.php';
 ?>
 <!DOCTYPE html>
@@ -44,6 +43,8 @@ require_once dirname(__FILE__).'/../app/pages/NotFound.php';
             <nav class="navbar">
                 <div class="container-fluid">
                     <div>
+                        <div class="hamburger-menu"><a href=""><img src =""></a></div>
+                        
                         <a href="/"><img  id="ga-logo" src="/img/content/top-art-name.jpg" alt="Gabby Aslanyan"></a>
                         <hr class="rounded">
                     </div>
@@ -82,12 +83,6 @@ require_once dirname(__FILE__).'/../app/pages/NotFound.php';
                 case "contact":
                     pageContact();
                     break;
-                case "about1":
-                    pageAbout1();
-                    break;
-                case "works":
-                    pageWorks();
-                    break;
                 default:
                     pageNotFound();
                     break;
@@ -97,9 +92,9 @@ require_once dirname(__FILE__).'/../app/pages/NotFound.php';
             <!--Footer start-->
             <div id="ga-footer">
         
-                    <div class="social-icons"><a href="email"><img src="/img/content/icons-email-60x60.png" alt="Email icon"></a></div>
-                    <div class="social-icons"><a href="http://www.facebook.com"><img src="/img/content/icons-facebook-60x60.png" alt="Email icon"></a></div>
-                    <div class="social-icons"><a href="http://www.linkedin.com"><img src="/img/content/icons-linkedin-60x60.png" alt="Email icon"></a></div>
+                    <div class="social-icons"><a href="mailto:gaslanyan@gmail.com"><img src="/img/content/icons-email-60x60.png" alt="Email icon"></a></div>
+                    <div class="social-icons"><a href="https://www.facebook.com/gohar.aslanyan.98"><img src="/img/content/icons-facebook-60x60.png" alt="Email icon"></a></div>
+                    <div class="social-icons"><a href="https://www.linkedin.com/in/gohar-gabby-aslanyan-45639080"><img src="/img/content/icons-linkedin-60x60.png" alt="Email icon"></a></div>
              
                 <ul class="footer-nav">
                     <li><a href="/?page=home">websites</a></li>
