@@ -27,7 +27,9 @@ body {
     border: 3px solid blue;
 }
 
-* {box-sizing:border-box}
+* {
+box-sizing:border-box
+}
 
 .container-fluid {
     max-width: 1920px;
@@ -338,7 +340,7 @@ button#cancel:hover {
     text-align: center;
 }
 
-.works-image {
+.carousel-inner .item .works-image {
     max-width: 500px;
     width: 100%;
     height: auto;
@@ -482,7 +484,7 @@ div .works-arrows {
     display: none;
 }
 
-.works-image {
+.carousel-inner .item .works-image {
     min-width: 250px;
     margin: 0 auto;
 }
@@ -490,9 +492,6 @@ div .works-arrows {
 .description p {
     display: none;
 }
-
-
-
 /* works end */ 
 
 

@@ -11,7 +11,6 @@ require_once dirname(__FILE__).'/../app/pages/Contacts.php';
 
 require_once dirname(__FILE__).'/../app/pages/Home.php';
 require_once dirname(__FILE__).'/../app/pages/Contact.php';
-require_once dirname(__FILE__).'/../app/pages/About_.php';
 require_once dirname(__FILE__).'/../app/pages/NotFound.php';
 ?>
 <!DOCTYPE html>
@@ -27,11 +26,11 @@ require_once dirname(__FILE__).'/../app/pages/NotFound.php';
 
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/pagstyles.css">
+        <link rel="stylesheet" href="/css/gaslanyan.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
         <link rel="icon" href="/img/content/favicon.ico" />
 
-        <script src="/js/pagScript.js"></script>
+        <script src="/js/gaslanyan.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>

@@ -10,6 +10,8 @@ function pageWebsites(){
     
     if($websiteKey != null || isset($websites[$websiteKey])){
        $website = $websites[$websiteKey];
+       $websiteKeys = array_keys($websites);
+       $websiteIndex = array_search($websiteKey, $websiteKeys);
     }
     else {
         $website = null;
@@ -31,28 +33,109 @@ function pageWebsites(){
            }
         }
         else {
+            $prev = null;
+            $next = null;
+            foreach ($websites as $k => $v) {
+                if($k != $website->getKey()){
+                    
+                }
+                else{
+                    
+                }
+            }
         ?>
         <div class="description">
             <div class="list-view-name"><?php echo $website->getName()?></div>
             <div class="list-view-undertext"><?php echo $website->getWorksDone()?></div>
 
-            
-            <div><a href="" id="visit">visit website</a></div>
+            <?php if($website->getLink()) { ?> 
+            <div><a href="<?php echo $website->getLink()?>" target="_blank" id="visit">visit website</a></div>
+            <?php } ?>
 
             <p><?php echo $website->getDescription()?></p>
 
-            <div class="list-view-name"><a href="">Next Project ></a></div>
-            <div class="list-view-name"><a href="">< Previous Project </a></div>    
+            <?php if($websiteIndex < count($websites) -1 ) {?>
+            <div class="list-view-name"><a href="?page=websites&website=<?php echo $websites[$websiteKeys[$websiteIndex+1]]->getKey() ?>">Next Project ></a></div>
+            <?php } ?>
+            
+            <?php if($websiteIndex > 0 ) {?>
+            <div class="list-view-name"><a href="?page=websites&website=<?php echo $websites[$websiteKeys[$websiteIndex-1]]->getKey()?> ">< Previous Project </a></div>
+            <?php } ?>
         </div>
 
         <div class="works">
-            <div class="list-view-name">1/2</div>
+            
             <div class="list-view-name">Home page with a dynamic carousel</div>
 
-            <div class="works-order"><a href="prev project"><img class="works-arrows" src="/img/content/left-arrow.png"></a></div>  
-            <img class="works-image works-order" src="/img/content/single-view/impression/1-impression-single-view.jpg">
-            <div class="works-order"><a href="prev project"><img class="works-arrows" src="/img/content/right-arrow.png"></a></div> 
+            <div class="works-order"><a href="#myCarousel" data-slide="prev"><img class="works-arrows" src="/img/content/left-arrow.png"></a></div> 
+            
+            
+            <div id="myCarousel" class="carousel slide works-order" data-ride="carousel" data-interval="false">
+                <!-- Indicators -->
+                <?php /* 
+                <ol class="carousel-indicators">
+                    
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <?php
+                        for ($i = 1; $i < count($website->getPictures()); $i++) {
+                    ?>
+                    <li data-target="#myCarousel" data-slide-to="<?php echo $i?>"></li>
+                    <?php } ?>
+                </ol>
+                 */
+                ?>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <?php
+                    $first = true;
+                    foreach ($website->getPictures() as $picture) {                                       
+                    ?>
+                    <div class="item<?php if($first){ echo " active"; $first = false;} ?>">
+                        <a href="<?php echo $picture->getBigFilePath()?>" data-toggle="lightbox" data-gallery="picture-gallery" data-type="image">
+                            <img class="works-image works-order" src="<?php echo $picture->getFilePath() ?>" alt="<?php $website->getName() ?>">
+                        </a>
+                    </div>
+                    <?php }?>
+                </div>
+
+            </div>              
+            <div class="works-order"><a href="#myCarousel" data-slide="next"><img class="works-arrows" src="/img/content/right-arrow.png"></a></div>
+            <div class="list-view-name"><span id="currentPicture">1</span>/<?php echo count($website->getPictures())?></div>
         </div>
+        <script src="/js/lightbox.js"></script>
+        <script type="text/javascript">
+                            var currentPicture = 1;
+                            $(document).ready(function ($) {
+                                $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                                    event.preventDefault();
+                                    $(this).ekkoLightbox();
+                                });
+                            });
+                            
+                            $('#myCarousel').on('slide.bs.carousel', function (obj) {
+                                if(obj.direction == "left") {
+                                    if(currentPicture == <?php echo count($website->getPictures())?>) {
+                                        currentPicture = 1;
+                                    }
+                                    else {
+                                        currentPicture++;
+                                    }
+                                }
+                                else {
+                                    if(currentPicture == 1) {
+                                        currentPicture = <?php echo count($website->getPictures())?>;
+                                    }
+                                    else {
+                                        currentPicture--;
+                                    }
+                                }
+
+                                $('#currentPicture').text(currentPicture);
+                            })
+                            
+                            
+        </script>
         <?php
         }
         ?>    

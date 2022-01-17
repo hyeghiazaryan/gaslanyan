@@ -32,6 +32,7 @@ class WebsiteProvider {
     private function constructMaynooth(){
         $website = new Website("maynooth", "Maynooth Furniture Store", "/img/websites", 8);
         $website->setLink("https://xd.adobe.com/view/bb2fc23f-9684-4c1b-a02a-42dde20475ea-ee7c/");
+        $website->setMobileLink("https://xd.adobe.com/view/bb2fc23f-9684-4c1b-a02a-42dde20475ea-ee7c/");
         $website->setWorksDone("Dynamic Website and Mobile Design Prototype");
         $website->setDescription("Maynooth Furniture was one of the two online projects that I had to complete while taking an online course of Adobe XD. The requirement was to design a dynamic prototype for an online furniture store. Login/signup information, store locator, ability to add an item to the cart, product page with detailed description, contacts page and testimonials were required, as well. The target audience was mainly middle aged women. I have both desktop and mobile versions of the prototype here. I also added some animation to my prototype’s logo page for some practice.");
       
@@ -52,6 +53,8 @@ class WebsiteProvider {
         $website->setLink("https://lesekroken.no//");
         $website->setWorksDone("Logo, Website Design");
         $website->setDescription("Lesekroken description");
+        
+        $website->addPictureDescription(1, "blah blah blah");
       
         return $website;
     }
@@ -67,7 +70,7 @@ class WebsiteProvider {
     
         private function constructJobdepot(){
         $website = new Website("jobdepot", "Jobdepot Job Search", "/img/websites", 2);
-        $website->setLink("https://xd.adobe.com/view/728b17e4-fbfd-4266-bd39-f06b180dd40c-27d8/");
+        $website->setLink("http://jobdepot.us");
         $website->setWorksDone("Logo, Website Design");
         $website->setDescription("Jobdepot description");
       
@@ -76,7 +79,6 @@ class WebsiteProvider {
     
         private function constructSacvoyage(){
         $website = new Website("sacvoyage", "SacVoyage Travel Agency", "/img/websites", 7);
-        $website->setLink("https://xd.adobe.com/view/728b17e4-fbfd-4266-bd39-f06b180dd40c-27d8/");
         $website->setWorksDone("Website Design");
         $website->setDescription("Sacvoyage description");
       
@@ -85,7 +87,6 @@ class WebsiteProvider {
     
         private function constructKamurj(){
         $website = new Website("kamurj", "Kamurj Credit Organization", "/img/websites", 6);
-        $website->setLink("https://xd.adobe.com/view/728b17e4-fbfd-4266-bd39-f06b180dd40c-27d8/");
         $website->setWorksDone("Website Design");
         $website->setDescription("Kamurj description");
       
@@ -94,7 +95,6 @@ class WebsiteProvider {
     
         private function constructAutoshuka(){
         $website = new Website("autoshuka", "Autoshuka Automobile Marketplace", "/img/websites", 3);
-        $website->setLink("https://xd.adobe.com/view/728b17e4-fbfd-4266-bd39-f06b180dd40c-27d8/");
         $website->setWorksDone("Website Design");
         $website->setDescription("Autoshuka description");
       

@@ -19,5 +19,9 @@ class Picture {
     function getFilePath(){
         return $this->path . '/' . $this->file;
     }
+    
+    function getBigFilePath(){
+        return $this->path . '/big/' . $this->file;
+    }
 
 } 
