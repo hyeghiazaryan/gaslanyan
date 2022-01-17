@@ -26,6 +26,15 @@ class WebsiteProvider {
         $website->setWorksDone("Logo, Website Design, Business Card, Brochure");
         $website->setDescription("In May 2008, with two of my friends, we founded a web studio based in Yerevan, Armenia and named it Impression Web Studio. We offered web site design and coding from scratch to the finished product for individuals and businesses, located in Armenia, Europe and USA.  It took us several weeks to do lots of research and to come up with the meticulously planned strategies, structure and architecture of the website and services we’d provide. Since we were very low on budget, we planned everything very carefully using as much of our own resources as we could. This included naming, branding, photography, copywriting, designing, coding and even using my own child and my friend as models. In the end we were very proud of our product. It was very versatile, modern and easy to use. The company started to grow and gain profits. It still exists and even though I moved to the US in 2011, I’m still wholeheartedly attached to this project like to my own child.");
 
+        $website->addPictureDescription(1, "Home page with a dynamic carousel");
+        $website->addPictureDescription(2, "Pic 2 description");
+        $website->addPictureDescription(3, "Pic 3 description");
+        $website->addPictureDescription(4, "Pic 4 description");
+        $website->addPictureDescription(5, "Pic 5 description");
+        $website->addPictureDescription(6, "Pic 6 description");
+        $website->addPictureDescription(7, "Pic 7 description");
+        $website->addPictureDescription(8, "Pic 8 description");
+        $website->addPictureDescription(9, "Pic 9 description");
         return $website;
     }
     
@@ -35,7 +44,16 @@ class WebsiteProvider {
         $website->setMobileLink("https://xd.adobe.com/view/bb2fc23f-9684-4c1b-a02a-42dde20475ea-ee7c/");
         $website->setWorksDone("Dynamic Website and Mobile Design Prototype");
         $website->setDescription("Maynooth Furniture was one of the two online projects that I had to complete while taking an online course of Adobe XD. The requirement was to design a dynamic prototype for an online furniture store. Login/signup information, store locator, ability to add an item to the cart, product page with detailed description, contacts page and testimonials were required, as well. The target audience was mainly middle aged women. I have both desktop and mobile versions of the prototype here. I also added some animation to my prototype’s logo page for some practice.");
-      
+        
+        $website->addPictureDescription(1, "Pic 1 description");
+        $website->addPictureDescription(2, "Pic 2 description");
+        $website->addPictureDescription(3, "Pic 3 description");
+        $website->addPictureDescription(4, "Pic 4 description");
+        $website->addPictureDescription(5, "Pic 5 description");
+        $website->addPictureDescription(6, "Pic 6 description");
+        $website->addPictureDescription(7, "Pic 7 description");
+        $website->addPictureDescription(8, "Pic 8 description");
+
         return $website;
     }
     
@@ -45,6 +63,13 @@ class WebsiteProvider {
         $website->setWorksDone("Logo, Graphic Design, Website Design");
         $website->setDescription("Pag description");
       
+        $website->addPictureDescription(1, "Pic 1 description");
+        $website->addPictureDescription(2, "Pic 2 description");
+        $website->addPictureDescription(3, "Pic 3 description");
+        $website->addPictureDescription(4, "Pic 4 description");
+        $website->addPictureDescription(5, "Pic 5 description");
+        $website->addPictureDescription(6, "Pic 6 description");
+        
         return $website;
     }
     
@@ -54,7 +79,10 @@ class WebsiteProvider {
         $website->setWorksDone("Logo, Website Design");
         $website->setDescription("Lesekroken description");
         
-        $website->addPictureDescription(1, "blah blah blah");
+        $website->addPictureDescription(1, "Pic 1 description");
+        $website->addPictureDescription(2, "Pic 2 description");
+        $website->addPictureDescription(3, "Pic 3 description");
+        $website->addPictureDescription(4, "Pic 4 description");
       
         return $website;
     }
@@ -64,6 +92,13 @@ class WebsiteProvider {
         $website->setLink("https://xd.adobe.com/view/728b17e4-fbfd-4266-bd39-f06b180dd40c-27d8/");
         $website->setWorksDone("Dynamic Website Design Prototype");
         $website->setDescription("Roarbikes description");
+        
+        $website->addPictureDescription(1, "Pic 1 description");
+        $website->addPictureDescription(2, "Pic 2 description");
+        $website->addPictureDescription(3, "Pic 3 description");
+        $website->addPictureDescription(4, "Pic 4 description");
+        $website->addPictureDescription(5, "Pic 5 description");
+        $website->addPictureDescription(6, "Pic 6 description");
       
         return $website;
     }
@@ -73,6 +108,9 @@ class WebsiteProvider {
         $website->setLink("http://jobdepot.us");
         $website->setWorksDone("Logo, Website Design");
         $website->setDescription("Jobdepot description");
+        
+        $website->addPictureDescription(1, "Pic 1 description");
+        $website->addPictureDescription(2, "Pic 2 description");
       
         return $website;
     }
@@ -81,6 +119,14 @@ class WebsiteProvider {
         $website = new Website("sacvoyage", "SacVoyage Travel Agency", "/img/websites", 7);
         $website->setWorksDone("Website Design");
         $website->setDescription("Sacvoyage description");
+        
+        $website->addPictureDescription(1, "Pic 1 description");
+        $website->addPictureDescription(2, "Pic 2 description");
+        $website->addPictureDescription(3, "Pic 3 description");
+        $website->addPictureDescription(4, "Pic 4 description");
+        $website->addPictureDescription(5, "Pic 5 description");
+        $website->addPictureDescription(6, "Pic 6 description");
+        $website->addPictureDescription(7, "Pic 7 description");
       
         return $website;
     }
@@ -89,6 +135,13 @@ class WebsiteProvider {
         $website = new Website("kamurj", "Kamurj Credit Organization", "/img/websites", 6);
         $website->setWorksDone("Website Design");
         $website->setDescription("Kamurj description");
+        
+        $website->addPictureDescription(1, "Pic 1 description");
+        $website->addPictureDescription(2, "Pic 2 description");
+        $website->addPictureDescription(3, "Pic 3 description");
+        $website->addPictureDescription(4, "Pic 4 description");
+        $website->addPictureDescription(5, "Pic 5 description");
+        $website->addPictureDescription(6, "Pic 6 description");
       
         return $website;
     }
@@ -97,6 +150,10 @@ class WebsiteProvider {
         $website = new Website("autoshuka", "Autoshuka Automobile Marketplace", "/img/websites", 3);
         $website->setWorksDone("Website Design");
         $website->setDescription("Autoshuka description");
+        
+        $website->addPictureDescription(1, "Pic 1 description");
+        $website->addPictureDescription(2, "Pic 2 description");
+        $website->addPictureDescription(3, "Pic 3 description");
       
         return $website;
     }

@@ -1,7 +1,7 @@
 
 /* next prev buttons */
         var slideIndex = 1;
-        showSlides(slideIndex);
+        //showSlides(slideIndex);
        
         function plusImage(n) {
             showSlides(slideIndex += n);
@@ -40,6 +40,8 @@ function clearContactForm(){
 function test(){
     alert("asdf");
 }
+
+
 
 //var slideIndex = 0;
 //showSlides();

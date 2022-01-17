@@ -7,6 +7,7 @@ class Website {
     private $name;
     private $picturePath;
     private $pictures = [];
+    private $pictureDescriptions = [];
     private $link;
     private $mobileLink;
     private $thumbnail;
@@ -84,7 +85,11 @@ class Website {
     }
     
     public function addPictureDescription($picIndex, $description){
-        
+        $this->pictureDescriptions[$picIndex] = $description;
+    }
+    
+    public function getPictureDescriptions(){
+        return $this->pictureDescriptions;
     }
     
     public function getMobileLink() {

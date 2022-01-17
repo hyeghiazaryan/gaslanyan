@@ -51,6 +51,9 @@ function pageWebsites(){
             <?php if($website->getLink()) { ?> 
             <div><a href="<?php echo $website->getLink()?>" target="_blank" id="visit">visit website</a></div>
             <?php } ?>
+            <?php if($website->getMobileLink()) { ?> 
+            <div><a href="<?php echo $website->getMobileLink()?>" target="_blank" id="visit">visit mobile website</a></div>
+            <?php } ?>
 
             <p><?php echo $website->getDescription()?></p>
 
@@ -65,7 +68,7 @@ function pageWebsites(){
 
         <div class="works">
             
-            <div class="list-view-name">Home page with a dynamic carousel</div>
+            <div id="pictureDescription" class="list-view-name"><?php echo ($website->getPictureDescriptions())[1]?></div>
 
             <div class="works-order"><a href="#myCarousel" data-slide="prev"><img class="works-arrows" src="/img/content/left-arrow.png"></a></div> 
             
@@ -93,7 +96,7 @@ function pageWebsites(){
                     ?>
                     <div class="item<?php if($first){ echo " active"; $first = false;} ?>">
                         <a href="<?php echo $picture->getBigFilePath()?>" data-toggle="lightbox" data-gallery="picture-gallery" data-type="image">
-                            <img class="works-image works-order" src="<?php echo $picture->getFilePath() ?>" alt="<?php $website->getName() ?>">
+                            <img class="works-image works-order" src="<?php echo $picture->getFilePath() ?>" alt="<?php echo $website->getName() ?>" />
                         </a>
                     </div>
                     <?php }?>
@@ -106,6 +109,14 @@ function pageWebsites(){
         <script src="/js/lightbox.js"></script>
         <script type="text/javascript">
                             var currentPicture = 1;
+                            var pictureDescriptions = [];
+                            
+                            <?php 
+                            foreach($website->getPictureDescriptions() as $ind => $desc){
+                                echo "pictureDescriptions[$ind] = \"$desc\";\r\n";
+                            }
+                            ?>
+                            
                             $(document).ready(function ($) {
                                 $(document).on('click', '[data-toggle="lightbox"]', function(event) {
                                     event.preventDefault();
@@ -132,6 +143,7 @@ function pageWebsites(){
                                 }
 
                                 $('#currentPicture').text(currentPicture);
+                                $('#pictureDescription').text(pictureDescriptions[currentPicture]);
                             })
                             
                             

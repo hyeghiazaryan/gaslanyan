@@ -7,10 +7,8 @@ require_once dirname(__FILE__).'/../app/pages/Websites.php';
 require_once dirname(__FILE__).'/../app/pages/Logos.php';
 require_once dirname(__FILE__).'/../app/pages/Everything.php';
 require_once dirname(__FILE__).'/../app/pages/About.php';
-require_once dirname(__FILE__).'/../app/pages/Contacts.php';
 
 require_once dirname(__FILE__).'/../app/pages/Home.php';
-require_once dirname(__FILE__).'/../app/pages/Contact.php';
 require_once dirname(__FILE__).'/../app/pages/NotFound.php';
 ?>
 <!DOCTYPE html>
@@ -52,7 +50,6 @@ require_once dirname(__FILE__).'/../app/pages/NotFound.php';
                         <li><a href="/?page=logos">logos</a></li>
                         <li><a href="/?page=everything">everything else</a></li>
                         <li><a href="/?page=about">about</a></li>
-                        <li><a href="/?page=contacts">contacts</a></li>
                     </ul>
                 </div>
             </nav>
@@ -79,9 +76,6 @@ require_once dirname(__FILE__).'/../app/pages/NotFound.php';
                 case "home":
                     pageHome();
                     break;
-                case "contact":
-                    pageContact();
-                    break;
                 default:
                     pageNotFound();
                     break;
@@ -92,15 +86,15 @@ require_once dirname(__FILE__).'/../app/pages/NotFound.php';
             <div id="ga-footer">
         
                     <div class="social-icons"><a href="mailto:gaslanyan@gmail.com"><img src="/img/content/icons-email-60x60.png" alt="Email icon"></a></div>
-                    <div class="social-icons"><a href="https://www.facebook.com/gohar.aslanyan.98"><img src="/img/content/icons-facebook-60x60.png" alt="Email icon"></a></div>
                     <div class="social-icons"><a href="https://www.linkedin.com/in/gohar-gabby-aslanyan-45639080"><img src="/img/content/icons-linkedin-60x60.png" alt="Email icon"></a></div>
+                    <div class="social-icons"><a href="https://www.facebook.com/gohar.aslanyan.98"><img src="/img/content/icons-facebook-60x60.png" alt="Email icon"></a></div>
+
              
                 <ul class="footer-nav">
                     <li><a href="/?page=home">websites</a></li>
                     <li><a href="/?page=works">logos</a></li>
                     <li><a href="/?page=works">everything else</a></li>
                     <li><a href="/?page=about">about</a></li>
-                    <li><a href="/?page=contact">contact</a></li>        
                 </ul>
                 <span>Gabby Aslanyan © 2022</span>
             </div>
