@@ -45,14 +45,14 @@ function pageWebsites(){
             }
         ?>
         <div class="description">
-            <div class="list-view-name"><?php echo $website->getName()?></div>
+            <div class="list-view-name big-text"><?php echo $website->getName()?></div>
             <div class="list-view-undertext"><?php echo $website->getWorksDone()?></div>
 
             <?php if($website->getLink()) { ?> 
             <div><a href="<?php echo $website->getLink()?>" target="_blank" id="visit">visit website</a></div>
             <?php } ?>
             <?php if($website->getMobileLink()) { ?> 
-            <div><a href="<?php echo $website->getMobileLink()?>" target="_blank" id="visit">visit mobile website</a></div>
+            <div><a href="<?php echo $website->getMobileLink()?>" target="_blank" id="visit">visit mobile</a></div>
             <?php } ?>
 
             <p><?php echo $website->getDescription()?></p>

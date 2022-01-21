@@ -104,6 +104,10 @@ ul.nav-text {
     text-align: center;
 }
 
+.big-text {
+    font-size: 22px;
+}
+
 .list-view-undertext {
     font-size: 14px;
     color: #707070;
@@ -278,7 +282,7 @@ a#visit {
     background-color: #E22727;
     border-radius: 3px;
     border: none;
-    margin: 30px 30px 30px 0;
+    margin: 30px 30px 0 0;
     text-align: center;
     line-height: 1.7;  
 }
@@ -323,7 +327,7 @@ button#cancel:hover {
 }
 
 .description p {
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 
 .description a,
@@ -345,6 +349,7 @@ button#cancel:hover {
     width: 100%;
     height: auto;
     vertical-align: middle;
+    border: 1px solid #e0e0e0;
 }
 
 .works-arrows {
