@@ -374,7 +374,6 @@ button#cancel:hover {
     display: none;
 }
 
-
 /*<!-- works page end !-->*/
 
 .clear-float {
@@ -437,7 +436,7 @@ button#cancel:hover {
   
     
 /*    footer start */
-    img.photo-properties {
+/*    img.photo-properties {
         margin: 0 auto;
         padding: 33px;
         width: 100%;
@@ -448,7 +447,7 @@ button#cancel:hover {
         clear: both;
         padding: 0;
         margin: auto auto;   
-    }        
+    }        */
  /*    footer end */  
 
 /*  contact start */
@@ -514,7 +513,25 @@ p.mobile-show,
 .mobile-show a {
     margin: 0 auto;
 }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    
+        img.photo-properties {
+        margin: 0 auto;
+        padding: 33px;
+        width: 100%;
+        max-width: 250px;
+}
+
+    .text-properties {
+        clear: both;
+        padding: 0;
+        margin: 30px auto 30px auto;   
+    } 
+    
+}
 /* works end */ 
 
 
-}
