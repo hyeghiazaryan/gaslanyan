@@ -89,9 +89,9 @@ require_once dirname(__FILE__).'/../app/pages/NotFound.php';
 
              
                 <ul class="footer-nav">
-                    <li><a href="/?page=home">websites</a></li>
-                    <li><a href="/?page=works">logos</a></li>
-                    <li><a href="/?page=works">everything else</a></li>
+                    <li><a href="/">websites</a></li>
+                    <li><a href="/?page=logos">logos</a></li>
+                    <li><a href="/?page=everything">everything else</a></li>
                     <li><a href="/?page=about">about</a></li>
                 </ul>
                 <span>Gabby Aslanyan © 2022</span>
