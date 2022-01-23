@@ -78,6 +78,7 @@ function pageEverything(){
             <a href="/img/everything/11-alien.jpg" data-toggle="lightbox" data-gallery="everything-gallery" data-type="image">
                     <img  src="/img/everything/11-alien.jpg" alt="Alien Picking From The Underground Illustration"/>
                     <div class="list-view-name">An Alien Peeking From The Underground Illustration</div>
+            </a>
         </div>
         <div class="list-view-style">
             <a href="/img/everything/12-vallarta.jpg" data-toggle="lightbox" data-gallery="everything-gallery" data-type="image">

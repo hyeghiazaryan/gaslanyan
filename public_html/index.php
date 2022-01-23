@@ -40,8 +40,6 @@ require_once dirname(__FILE__).'/../app/pages/NotFound.php';
             <nav class="navbar">
                 <div class="container-fluid">
                     <div>
-                        <div class="hamburger-menu"><a href=""><img src =""></a></div>
-                        
                         <a href="/"><img  id="ga-logo" src="/img/content/top-art-name.jpg" alt="Gabby Aslanyan"></a>
                         <hr class="rounded">
                     </div>

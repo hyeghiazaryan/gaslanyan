@@ -8,10 +8,10 @@ function pageAbout(){
         Hi there!
         <br/>
         I’m Gabby, a web/UX/UI designer based in the greater Seattle area. 
-        I love designing everything, starting from logos and websites up to houses, interiors and cartoon characters. 
+        I love designing everything, from logos and websites to houses, interiors, and cartoon characters. 
         <br/>
-        I’m originally from Armenia. I moved to the US in 2011 with my husband. We have two kids. 
-        My hobbies include architecture, quality classical art in any form, hiking and traveling with my family.
+        I’m originally from Armenia and I moved to the US in 2011 with my husband. We have two kids.
+        My hobbies include architecture, classical art in any form, hiking, and traveling with my family.
         <br/>
         
         And yes, crazy hair is my thing  :)

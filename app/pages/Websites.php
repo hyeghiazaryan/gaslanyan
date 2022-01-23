@@ -55,22 +55,24 @@ function pageWebsites(){
             <div><a href="<?php echo $website->getMobileLink()?>" target="_blank" id="visit">visit mobile</a></div>
             <?php } ?>
 
-            <p><?php echo $website->getDescription()?></p>
-
-            <?php if($websiteIndex < count($websites) -1 ) {?>
-            <div class="list-view-name"><a href="?page=websites&website=<?php echo $websites[$websiteKeys[$websiteIndex+1]]->getKey() ?>">Next Project ></a></div>
-            <?php } ?>
+            <p class="mobile-hide"><?php echo $website->getDescription()?></p>
             
             <?php if($websiteIndex > 0 ) {?>
-            <div class="list-view-name"><a href="?page=websites&website=<?php echo $websites[$websiteKeys[$websiteIndex-1]]->getKey()?> ">< Previous Project </a></div>
+            <div class="list-view-name mobile-hide"><a href="?page=websites&website=<?php echo $websites[$websiteKeys[$websiteIndex-1]]->getKey()?> ">< Previous Project </a></div>
             <?php } ?>
+
+            <?php if($websiteIndex < count($websites) -1 ) {?>
+            <div class="list-view-name mobile-hide"><a href="?page=websites&website=<?php echo $websites[$websiteKeys[$websiteIndex+1]]->getKey() ?>">Next Project ></a></div>
+            <?php } ?>
+            
+
         </div>
 
         <div class="works">
             
             <div id="pictureDescription" class="list-view-name"><?php echo ($website->getPictureDescriptions())[1]?></div>
 
-            <div class="works-order"><a href="#myCarousel" data-slide="prev"><img class="works-arrows" src="/img/content/left-arrow.png"></a></div> 
+            <div class="works-order mobile-arrows"><a href="#myCarousel" data-slide="prev"><img class="works-arrows" src="/img/content/left-arrow.png"></a></div> 
             
             
             <div id="myCarousel" class="carousel slide works-order" data-ride="carousel" data-interval="false">
@@ -103,9 +105,26 @@ function pageWebsites(){
                 </div>
 
             </div>              
-            <div class="works-order"><a href="#myCarousel" data-slide="next"><img class="works-arrows" src="/img/content/right-arrow.png"></a></div>
+            <div class="works-order mobile-arrows"><a href="#myCarousel" data-slide="next"><img class="works-arrows" src="/img/content/right-arrow.png"></a></div>
             <div class="list-view-name"><span id="currentPicture">1</span>/<?php echo count($website->getPictures())?></div>
         </div>
+    
+        <div class="description">
+            
+            <p class="mobile-show"><?php echo $website->getDescription()?></p>
+            
+            <?php if($websiteIndex > 0 ) {?>
+            <div class="list-view-name mobile-show"><a href="?page=websites&website=<?php echo $websites[$websiteKeys[$websiteIndex-1]]->getKey()?> ">< Previous Project </a></div>
+            <?php } ?>
+
+            <?php if($websiteIndex < count($websites) -1 ) {?>
+            <div class="list-view-name mobile-show"><a href="?page=websites&website=<?php echo $websites[$websiteKeys[$websiteIndex+1]]->getKey() ?>">Next Project ></a></div>
+            <?php } ?>
+            
+   
+        </div>    
+    
+    
         <script src="/js/lightbox.js"></script>
         <script type="text/javascript">
                             var currentPicture = 1;
