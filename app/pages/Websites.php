@@ -102,7 +102,19 @@ function pageWebsites(){
                         </a>
                     </div>
                     <?php }?>
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control mobile-show" style="margin:0" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control mobile-show" style="margin:0" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
                 </div>
+                
+                
+                
 
             </div>              
             <div class="works-order mobile-arrows"><a href="#myCarousel" data-slide="next"><img class="works-arrows" src="/img/content/right-arrow.png"></a></div>
