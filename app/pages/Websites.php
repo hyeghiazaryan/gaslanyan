@@ -101,18 +101,17 @@ function pageWebsites(){
                             <img class="works-image works-order" src="<?php echo $picture->getFilePath() ?>" alt="<?php echo $website->getName() ?>" />
                         </a>
                     </div>
-                    <?php }?>
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control mobile-show" style="margin:0" href="#myCarousel" data-slide="prev">
+                    <?php }?>   
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control arrows-mobile-show" style="margin:0" href="#myCarousel" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="right carousel-control mobile-show" style="margin:0" href="#myCarousel" data-slide="next">
+                <a class="right carousel-control arrows-mobile-show" style="margin:0" href="#myCarousel" data-slide="next">
                     <span class="glyphicon glyphicon-chevron-right"></span>
                     <span class="sr-only">Next</span>
                 </a>
-                </div>
-                
                 
                 
 
