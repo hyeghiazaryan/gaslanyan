@@ -406,7 +406,18 @@ button#cancel:hover {
         display: block !important;
         margin: 0 auto !important;
         border: 1px solid #ccc !important;
-        border-bottom: none !important;
+        border-bottom: none !important;  
+    }
+    
+    .nav-text a,
+    .nav-text a:link {
+        display: block;
+        width: 100%;
+        cursor: pointer;
+    }
+    
+    .nav-text li:hover {
+        background-color: #efefef;            
     }
     
     .nav-text li:last-child {
@@ -438,24 +449,7 @@ button#cancel:hover {
         padding: 10px;
     }
   
-    
-/*    footer start */
-/*    img.photo-properties {
-        margin: 0 auto;
-        padding: 33px;
-        width: 100%;
-        max-width: 250px;
-}
-
-    .text-properties {
-        clear: both;
-        padding: 0;
-        margin: auto auto;   
-    }        */
- /*    footer end */  
-
-/*  contact start */
-
+   
     .form-size {
             width: 100%;
     }
@@ -517,7 +511,8 @@ button#cancel:hover {
     .mobile-hide {
         display: none;
     }
-}
+    
+}   
 
 @media only screen and (max-width: 1020px) {
     
