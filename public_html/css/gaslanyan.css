@@ -85,7 +85,8 @@ ul.nav-text {
 
 .nav-text a:active, 
 .nav-text a:hover,
-.nav-text a:focus {
+.nav-text a:focus,
+.nav-text a.active{
     color: #E22727;
 }
 
@@ -163,7 +164,8 @@ ul.nav-text {
 }
 
 .footer-nav a:active,
-.footer-nav a:hover {         
+.footer-nav a:hover,
+.footer-nav a.active{         
     color: #E22727;
     text-decoration: none;
 }

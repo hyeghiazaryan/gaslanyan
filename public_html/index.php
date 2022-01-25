@@ -34,7 +34,10 @@ require_once dirname(__FILE__).'/../app/pages/NotFound.php';
     </head>
     
     <body>
-        <div class="container-fluid">  
+        <div class="container-fluid">
+            <?php
+            $page = !empty($_GET['page']) ? $_GET['page'] : 'websites';
+            ?>
 
             <!--Main navigation start -->                
             <nav class="navbar">
@@ -44,16 +47,15 @@ require_once dirname(__FILE__).'/../app/pages/NotFound.php';
                         <hr class="rounded">
                     </div>
                     <ul class="nav-text">
-                        <li><a href="/">websites</a></li>
-                        <li><a href="/?page=logos">logos</a></li>
-                        <li><a href="/?page=everything">everything else</a></li>
-                        <li><a href="/?page=about">about</a></li>
+                        <li><a <?php if($page == "websites") echo 'class="active"'?> href="/">websites</a></li>
+                        <li><a <?php if($page == "logos") echo 'class="active"'?> href="/?page=logos">logos</a></li>
+                        <li><a <?php if($page == "everything") echo 'class="active"'?> href="/?page=everything">everything else</a></li>
+                        <li><a <?php if($page == "about") echo 'class="active"'?> href="/?page=about">about</a></li>
                     </ul>
                 </div>
             </nav>
             <!--Main navigation end -->   
             <?php
-            $page = !empty($_GET['page']) ? $_GET['page'] : 'websites';
             
             switch ($page) {
                 case "websites":
@@ -89,10 +91,10 @@ require_once dirname(__FILE__).'/../app/pages/NotFound.php';
 
              
                 <ul class="footer-nav">
-                    <li><a href="/">websites</a></li>
-                    <li><a href="/?page=logos">logos</a></li>
-                    <li><a href="/?page=everything">everything else</a></li>
-                    <li><a href="/?page=about">about</a></li>
+                    <li><a <?php if($page == "websites") echo 'class="active"'?> href="/">websites</a></li>
+                    <li><a <?php if($page == "logos") echo 'class="active"'?> href="/?page=logos">logos</a></li>
+                    <li><a <?php if($page == "everything") echo 'class="active"'?> href="/?page=everything">everything else</a></li>
+                    <li><a <?php if($page == "about") echo 'class="active"'?> href="/?page=about">about</a></li>
                 </ul>
                 <span>Gabby Aslanyan © 2022</span>
             </div>
